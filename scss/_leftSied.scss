@@ -1,0 +1,15 @@
+#leftSide {
+  grid-area: left;
+
+  img {
+    margin-top: 20px;
+    margin-left: 30px;
+    box-shadow: 10px 12px 5px;
+    border-radius: 12px;
+  }
+  @include mobile {
+    img {
+      display: none;
+    }
+  }
+}

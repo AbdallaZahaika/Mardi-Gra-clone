@@ -1,0 +1,89 @@
+#containerOfSectionOfContactGrid {
+  grid-area: Contact;
+  width: 700px;
+  height: 750px;
+  margin-top: 70px;
+  background-color: #fff;
+  box-shadow: 8px 10px 5px;
+  border-radius: 17px;
+
+  @include mobile {
+    width: 100vw;
+  }
+
+  form {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffffff73;
+    border-radius: 17px;
+
+    .title {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 4em;
+      font-style: italic;
+      margin-bottom: 10px;
+      cursor: default;
+      text-shadow: $text-shadow-gray;
+      color: #000;
+    }
+
+    label {
+      h1 {
+        font-style: italic;
+
+        font: {
+          family: $HennyPenny;
+          size: 2rem;
+          color: $black;
+        }
+
+        margin-top: 2px;
+      }
+    }
+
+    input[type="text"] {
+      text-align: center;
+      width: 270px;
+      font-size: 1.5em;
+      outline: none;
+      box-sizing: border-box;
+      border: 2px solid $black;
+      border-radius: 10px;
+      margin-bottom: 2px;
+      box-shadow: 2px 3px 4px;
+    }
+
+    textarea {
+      width: 400px;
+      resize: none;
+      outline: none;
+      box-sizing: border-box;
+      border: 2px solid $black;
+      border-radius: 5px;
+      box-shadow: 2px 3px 4px;
+      @include mobile {
+        width: 95vw;
+      }
+      font: {
+        family: $Roboto;
+        size: 1.2em;
+        weight: 600;
+      }
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      width: 110px;
+      height: 40px;
+      box-shadow: 0px 5px 5px;
+      border-radius: 7px;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+}

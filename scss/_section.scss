@@ -1,0 +1,296 @@
+section {
+  grid-area: section;
+  margin-bottom: 180px;
+  @include mobile {
+    margin-bottom: 10px;
+  }
+
+  #theContainerOfSectionGrid {
+    display: flex;
+    justify-content: center;
+
+    #containerOfSectionGrid {
+      @include mobile {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+          "contain1"
+          "sponsors";
+      }
+      #leftSiedOfSection {
+        #leftside1 {
+          grid-area: asideR1;
+          margin: 60px 20px;
+          width: 180px;
+          height: 310px;
+          background-color: #ffffff;
+          border: 2px solid #fdefe1;
+
+          box-shadow: 6px 10px 5px;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          transition: all 0.7s ease-in-out;
+
+          &:hover {
+            width: 220px;
+            height: 350px;
+            font-size: 1.2em;
+            color: $full-black;
+          }
+
+          img[alt="LaToyaCantrell"] {
+            margin: 0px auto;
+            margin-bottom: 5px;
+            width: 120px;
+            border: 5px solid #f2f2f2;
+            border: 5px solid #c7c2c2;
+            border-radius: 50%;
+            transition: all 0.5s ease-in-out;
+          }
+
+          p {
+            font-family: $Roboto;
+            color: $black;
+            text-align: center;
+            font-size: 1.1em;
+          }
+        }
+        @include mobile {
+          display: none;
+        }
+      }
+
+      #Paragraph1 {
+        grid-area: contain1;
+        margin-top: 50px;
+        width: 700px;
+        height: 400px;
+        background-color: #f7f4f0;
+        box-shadow: 8px 10px 5px;
+        border-radius: 17px;
+        transition: all 0.7s ease-in-out;
+        @include mobile {
+          width: 100vw;
+          height: 700px;
+          margin-bottom: 100px;
+        }
+        h1 {
+          font-family: $HennyPenny;
+          font-size: 2.2em;
+          border-radius: 17px 17px 0px 0px;
+          text-align: center;
+          text-shadow: $text-shadow-gray;
+          color: #000;
+        }
+
+        h2 {
+          padding: 0px 10px;
+          font-family: $Roboto;
+          font-size: 1.6em;
+          color: $black;
+          text-align: center;
+          line-height: 1.4;
+        }
+      }
+
+      #sponsors {
+        grid-area: sponsors;
+        width: 700px;
+        height: 790px;
+        background-color: #f7f4f0;
+        box-shadow: 8px 10px 5px;
+        border-radius: 17px;
+        transition: all 0.7s ease-in-out;
+        @include mobile {
+          width: 100vw;
+          height: 100%;
+        }
+        .headerOfTheSponsors {
+          width: 100%;
+          display: block;
+          height: 80px;
+          border-radius: 17px;
+          margin-bottom: 20px;
+
+          h1 {
+            text-align: center;
+            font-family: $HennyPenny;
+            font-size: 4em;
+            text-shadow: $text-shadow-gray;
+            color: #000;
+            @include mobile {
+              font-size: 3em;
+            }
+          }
+        }
+
+        .containerOfCard {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          margin-right: 0px;
+          margin-left: 0px;
+          @include mobile {
+            justify-content: center;
+          }
+        }
+        .titel {
+          &:hover span {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+            opacity: 1;
+            font-family: $HennyPenny;
+            font-size: 1.8rem;
+            color: $orange-dark;
+          }
+        }
+
+        .card {
+          margin: 8px;
+          margin-bottom: 15px;
+          width: 210px;
+          height: 200px;
+          border-radius: 10px;
+          box-shadow: 2px 6px 3px;
+          transition: all 0.7s ease-in-out;
+
+          &:hover {
+            width: 220px;
+            height: 210px;
+            cursor: pointer;
+          }
+
+          span {
+            opacity: 0;
+          }
+          @include mobile {
+            width: 90vw;
+            &:hover {
+              width: 90vw;
+            }
+          }
+        }
+
+        .sheraton-new-orleans-hote {
+          background-image: url("../images/TheRitzCarltonNewOrleans2.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 20px;
+          transition: all 0.6s ease-in-out;
+
+          &:hover {
+            background-image: url("../images/sheatonNewOrleansHotel.jpg");
+          }
+        }
+
+        .Walk-On-sBistreauxandBar {
+          background-image: url("../images/Walk-On_sBistreauxandBar.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 20px;
+          transition: all 0.6s ease-in-out;
+
+          &:hover {
+            background-image: url("../images/Walk-On_sBistreauxandBar2.jpg");
+          }
+        }
+
+        .AceHotelNewOrleans {
+          background-image: url("../images/Ace\ Hotel\ New\ Orleans.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 20px;
+          transition: all 0.7s ease-in-out;
+
+          &:hover {
+            background-image: url("../images/AceHotelNewOrleans2.jpg");
+          }
+        }
+
+        .TheRitzCarltonNewOrleans {
+          background-image: url("../images/TheRitCarltonNewOrleans3.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 20px;
+          transition: all 0.8s ease-in-out;
+
+          &:hover {
+            background-image: url("../images/TheRitCarltonNewOrleans2.jpg");
+            background-position: center;
+          }
+        }
+
+        .PremiumParking-P402 {
+          background-image: url("../images/PremiumParking-P402.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 20px;
+          transition: all 0.7s ease-in-out;
+
+          &:hover {
+            background-image: url("../images/Premium Parking-P4022.jpg");
+            background-position: center;
+          }
+        }
+
+        .LouisianaChildrensMuseum {
+          background-image: url("../images/LouisianaChildren_sMuseum.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 20px;
+          transition: all 0.6s ease-in-out;
+
+          &:hover {
+            background-image: url("../images/LouisianaChildren_sMuseum3.jpg");
+            background-position: center;
+          }
+        }
+
+        .MuseumofDeath {
+          background-image: url("../images/MuseumofDeath.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          border-radius: 20px;
+          transition: all 0.6s ease-in-out;
+
+          &:hover {
+            background-image: url("../images/MuseumofDeath1.jpg");
+          }
+        }
+
+        .HauntedMuseum {
+          background-image: url("../images/Haunted_Museum.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 20px;
+          transition: all 0.6s ease-in-out;
+
+          &:hover {
+            background-image: url("../images/ZakBagansTheHauntedMuseum1.jpg");
+          }
+        }
+
+        .becomeSponsor {
+          background-image: url("../images/sponsers/becomeSponsor.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 20px;
+          transition: all 0.6s ease-in-out;
+
+          h3 {
+            font-family: $HennyPenny;
+            font-size: 3rem;
+            color: $red;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

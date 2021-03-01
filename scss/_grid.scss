@@ -1,0 +1,123 @@
+#container {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: 700px 1fr 350px;
+  grid-template-areas:
+    "headernav headernav headernav"
+    "left section right"
+    "footer footer footer";
+
+  @include mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "headernav"
+      "section"
+      "footer";
+  }
+}
+
+#containerOfHeaderGrid {
+  display: grid;
+  grid-template-columns: 325px 1fr 300px;
+  grid-template-rows: 100px 600px;
+  grid-template-areas:
+    "theHeader theHeader theHeader"
+    "leftOfHead headerVideo rightOfHead";
+
+  @include mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 110px;
+    grid-template-areas: " theHeader2 ";
+  }
+}
+
+#container2 {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: 150px 1fr 350px;
+  grid-template-areas:
+    "headernav headernav headernav"
+    "left section right"
+    "footer footer footer";
+
+  @include mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "headernav"
+      "section"
+      "footer";
+  }
+}
+
+#containerOfHeaderGrid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 110px;
+  grid-template-areas: " theHeader2 ";
+}
+
+#containerOfFooterGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 350px;
+  grid-template-areas: "about socialMedia Copyright";
+  @include mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "socialMedia"
+      "about"
+      "Copyright";
+  }
+}
+
+#containerOfSectionGrid {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  grid-template-rows: 500px 1fr;
+  grid-template-areas:
+    "contain1 asideR1"
+    "sponsors asideR2";
+}
+
+#containerOfSectionOfMediaGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1150px 1200px;
+  grid-template-areas:
+    "contain1"
+    "sponsors";
+}
+
+#containerOfSectionOfFqaGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "fqa";
+}
+
+#containerOfSectionOfContactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "contact";
+}
+
+#containerOfSectionOfAboutGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "About";
+}
+#containerOfSectionOfExamGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "exam";
+}

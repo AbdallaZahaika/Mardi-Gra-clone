@@ -1,0 +1,64 @@
+#fqaContent {
+  grid-area: fqa;
+  width: 920px;
+  height: 100%;
+  margin-top: 50px;
+  background-color: #f7f4f0;
+  box-shadow: 8px 10px 5px;
+  border-radius: 17px;
+  transition: all 0.7s ease-in-out;
+  @include mobile {
+    width: 100vw;
+    height: 100%;
+  }
+  .titel {
+    margin-bottom: 15px;
+    font-family: $HennyPenny;
+    font-size: 3.7em;
+    text-align: center;
+    color: #000;
+    text-shadow: $text-shadow-gray;
+    @include mobile {
+      font-size: 1.8em;
+    }
+  }
+
+  hr {
+    height: 7px;
+    background-color: #000;
+  }
+
+  .fqa_container {
+    .fqa {
+      .fqa_question {
+        display: block;
+        cursor: pointer;
+        outline: none;
+        margin: 5px 30px 5px 30px;
+
+        h1 {
+          font-size: 2.2em;
+          font-family: $HennyPenny;
+          color: #000;
+          text-shadow: $text-shadow-white;
+          @include mobile {
+            font-size: 1em;
+          }
+        }
+      }
+
+      .fqa_answer_container {
+        display: none;
+      }
+
+      .fqa_answer {
+        padding: 10px;
+        h2 {
+          @include mobile {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}

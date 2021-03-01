@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: contain;
+  background-color: #fcca69;
+}
+
+///Google Fonts////
+//HennyPenny
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+//Pattaya
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+//Roboto
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Roboto&display=swap");
+//////////////
+//font Headlines
+$HennyPenny: "Henny Penny", cursive;
+$Pattaya: "Pattaya", sans-serif;
+//font text
+$Roboto: "Roboto", sans-serif;
+////colors
+$black: #0d0d0d;
+$full-black: #000000;
+$white-gray: #f2f2f2;
+$white-gray2: #c7c2c2;
+$orange: #f2cc0f;
+$orange-dark: #ffd500;
+$green: #0cbf3f;
+$Purple: #9453a6;
+$red: #e92525d0;
+
+///////////text-Shadow/////////
+
+$text-shadow-gray: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+  1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+  4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+  4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+  7px 6px 1px #cccccc;
+
+$text-shadow-white: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
+  0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+  0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+  0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+  0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);

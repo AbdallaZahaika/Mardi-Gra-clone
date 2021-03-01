@@ -1,0 +1,15 @@
+#rightSide {
+  grid-area: right;
+
+  img {
+    margin-top: 20px;
+    margin-left: -30px;
+    box-shadow: -13px 12px 5px;
+    border-radius: 12px;
+  }
+  @include mobile {
+    img {
+      display: none;
+    }
+  }
+}

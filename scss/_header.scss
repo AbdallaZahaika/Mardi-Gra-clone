@@ -1,0 +1,252 @@
+header {
+  grid-area: headernav;
+  background-color: #000;
+  box-shadow: 0px 5px 9px;
+  max-width: 100%;
+  .containerOfHeader {
+    display: flex;
+    flex-direction: column;
+    @include mobile {
+      margin: 0px;
+    }
+    #bgcVideo {
+      grid-area: headerVideo;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      video {
+        width: 80%;
+        height: 600px;
+        outline: none;
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+
+    img[alt="logoLeft"] {
+      width: 130px;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        transform: skew(25deg, 25deg);
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    nav {
+      grid-area: theHeader;
+      z-index: 1;
+      margin-right: 200px;
+      @include mobile {
+        grid-area: theHeader2;
+        z-index: 1;
+        width: 100%;
+        margin: 0;
+      }
+      .nvaForMobile {
+        .hamburger {
+          display: none;
+        }
+        .logoForMobile {
+          display: none;
+        }
+        @include mobile {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .hamburger {
+            display: block;
+            font-size: 4em;
+            color: #fff;
+          }
+          .logoForMobile {
+            display: block;
+            span {
+              color: white;
+              margin-right: 50px;
+              font-size: 3em;
+            }
+          }
+        }
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mobile {
+          width: 100vw;
+          margin: 0px;
+          background-color: #000;
+          display: none;
+        }
+        li {
+          padding-left: 50px;
+          list-style-type: none;
+          @include mobile {
+            padding-right: 50px;
+            list-style-type: none;
+            text-align: center;
+          }
+          a {
+            text-align: center;
+            font-family: $HennyPenny;
+            font-size: 3rem;
+            // color: $orange;
+            color: $orange-dark;
+            text-decoration: none;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+              font-size: 4em;
+              color: $green;
+            }
+            @include mobile {
+              text-align: center;
+              font-family: $HennyPenny;
+              font-size: 2rem;
+              color: $orange-dark;
+              text-decoration: none;
+              &:hover {
+                font-size: 2em;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #theLeftSiedOftheHeader {
+      margin-top: 190px;
+      margin-left: 20px;
+      height: 150px;
+      @include mobile {
+        display: none;
+      }
+      .title {
+        display: block;
+        color: #fff;
+        font-size: 2.3em;
+        margin-left: 13px;
+        margin-top: 10px;
+        color: #ffffff;
+        text-shadow: #474747 3px 5px 2px;
+        color: #ffffff;
+        cursor: default;
+        transition: all 0.6s ease-in-out;
+        &:hover {
+          font-size: 2.4em;
+        }
+      }
+
+      .tillToMardiGras {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: #fff;
+
+        span {
+          text-align: center;
+          font-size: 1.3em;
+          padding-left: 10px;
+          cursor: default;
+        }
+
+        .days {
+          text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px;
+          color: #ffffff;
+
+          #days {
+            text-align: center;
+            font-size: 3em;
+            cursor: default;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+              font-size: 3.4em;
+            }
+          }
+
+          span {
+            margin-right: 10px;
+          }
+        }
+
+        .hours {
+          text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px;
+          color: #ffffff;
+
+          #hours {
+            text-align: center;
+            font-size: 3em;
+            cursor: default;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+              font-size: 3.4em;
+            }
+          }
+
+          span {
+            padding-right: 8px;
+          }
+        }
+
+        .minutes {
+          text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px;
+          color: #ffffff;
+
+          #miunts {
+            text-align: center;
+            font-size: 3em;
+            cursor: default;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+              font-size: 3.4em;
+            }
+          }
+
+          span {
+            padding-right: 8px;
+          }
+        }
+
+        .second {
+          text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px;
+          color: #ffffff;
+
+          #second {
+            text-align: center;
+            font-size: 3em;
+            cursor: default;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+              font-size: 3.4em;
+            }
+          }
+
+          span {
+            padding-right: 8px;
+          }
+        }
+      }
+    }
+
+    #therightSiedOftheHeader {
+      grid-area: rightOfHead;
+
+      img {
+        width: 100%;
+        height: 60vh;
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}

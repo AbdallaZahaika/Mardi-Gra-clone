@@ -1,0 +1,109 @@
+.containerOfHeader2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+  @include mobile {
+    margin: 0px;
+  }
+  img[alt="logoLeft"] {
+    width: 130px;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      transform: skew(25deg, 25deg);
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+  .testYourInfo {
+    a {
+      color: wheat;
+    }
+  }
+  nav {
+    grid-area: theHeader2;
+    z-index: 1;
+    margin-top: 10px;
+    .nvaForMobile {
+      .hamburger {
+        display: none;
+      }
+      .logoForMobile {
+        display: none;
+      }
+      @include mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .hamburger {
+          width: 10px;
+          display: block;
+          font-size: 4em;
+          color: #fff;
+        }
+        .logoForMobile {
+          display: block;
+          span {
+            color: white;
+            margin-right: 50px;
+            font-size: 3em;
+          }
+        }
+      }
+    }
+
+    ////////////// this help to be all of ul in same position (:
+    #toFix {
+      margin-left: 232px;
+      @include mobile {
+        margin-left: 0;
+      }
+    }
+    ////////////////////////////////
+    ul {
+      margin-right: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include mobile {
+        width: 100vw;
+        margin: 0px;
+        background-color: #000;
+        display: none;
+      }
+      li {
+        padding-left: 50px;
+        list-style-type: none;
+        @include mobile {
+          padding-right: 50px;
+          list-style-type: none;
+          text-align: center;
+        }
+        a {
+          text-align: center;
+          font-family: $HennyPenny;
+          font-size: 3rem;
+          color: $orange-dark;
+          text-decoration: none;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            font-size: 4em;
+            color: $green;
+          }
+          @include mobile {
+            text-align: center;
+            font-family: $HennyPenny;
+            font-size: 2rem;
+            color: $orange-dark;
+            text-decoration: none;
+            &:hover {
+              font-size: 2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
